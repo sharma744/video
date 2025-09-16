@@ -1,7 +1,7 @@
 const socket = io();
 const adduser = document.getElementById("adduser");
 const inp = document.getElementById("inp");
-const user= document.getElementById("user");
+const client= document.getElementById("client");
 let localstreams;
 let naam = "";
 let peerconn;
@@ -25,7 +25,7 @@ const createPeerConnection = () => {
     // Receive remote stream
     pc.ontrack = (event) => {
         console.log("✅ Received remote track",event.streams[0]);
-        user.srcObject = event.streams[0];
+        client.srcObject = event.streams[0];
     };
 
     // Send ICE candidates
