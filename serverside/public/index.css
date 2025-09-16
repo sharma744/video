@@ -1,0 +1,27 @@
+#main{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    border:1px solid black;
+    width:100vh;
+    height:50vh;
+    
+
+}
+#you{
+    width:20vw;
+    height: 30vh;
+    border:1px solid black;
+    margin:10px;
+}
+#client{
+    width:20vw;
+    height: 30vh;
+    border:1px solid black
+}
+#inp{
+    margin-left:40vw
+}
+#main{
+    margin-left:40vw
+}
