@@ -25,7 +25,7 @@ const createPeerConnection = () => {
     // Receive remote stream
     pc.ontrack = (event) => {
         console.log("✅ Received remote track",event.streams[0]);
-        client.srcObject = event.streams[0];
+        user.srcObject = event.streams[0];
     };
 
     // Send ICE candidates
